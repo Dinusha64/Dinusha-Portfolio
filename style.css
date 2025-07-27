@@ -139,7 +139,7 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
-.btn {
+.btn, .btn-portfolio {
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
@@ -152,8 +152,12 @@ span {
     transition: .5 ease;
 }
 
-.btn:hover {
+.btn:hover, .btn-portfolio:hover {
     box-shadow: none;
+}
+
+.btn-portfolio {
+    margin-left: 2rem;
 }
 
 .about {
@@ -226,6 +230,7 @@ span {
 .services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+    text-align: justify;
 }
 
 .portfolio {
@@ -519,4 +524,12 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+}
+.services-box .services-list {
+    list-style-type: disc;
+    text-align: left;
+    margin: 1rem 0 3rem;
+    padding-left: 12rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
 }
